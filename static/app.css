@@ -1,0 +1,73 @@
+body{
+    background-color: whitesmoke;
+}
+
+button {
+    background-color: rgb(255, 210, 126);
+    border-radius: 10px;
+    border-style: none;
+    font-size: large
+}
+
+button:hover {
+    cursor: pointer;
+    background-color: rgb(255, 230, 184);
+}
+
+input{
+    border: 1px solid;
+    border-radius: 8px;
+}
+
+h1 {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+li{
+    font-family: 'Courier New', Courier, monospace;
+    font-size: large;
+    padding-top: 10px;
+}
+
+table{
+    font-size: large;
+    width: 50%;
+}
+
+td{
+    padding-left: 43px;
+}
+
+.table-div {
+    border: 1px solid;
+    border-radius: 10px;
+    text-align: center;
+    margin: auto;
+    padding: 10px;
+}
+
+.h1-high-score{
+    font-family: 'Courier New', Courier, monospace;
+    font-size: large;
+}
+
+.time-score {
+    font-family: 'Courier New', Courier, monospace;
+    font-size: large;
+}
+
+.msg-p {
+    font-size: large;
+    background-color: antiquewhite;
+}
+
+#game-container {
+    background-color: rgba(255, 241, 216, 0.37);
+    border: 5px solid  orange;
+    border-radius: 8px;
+    margin: auto;
+    margin-top: 50px;
+    width: 20%;
+    padding: 10px;
+}
+

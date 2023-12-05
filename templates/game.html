@@ -1,0 +1,48 @@
+{% extends 'base.html' %}
+{% block title %} Boggle {% endblock %}
+
+{% block content %}
+<section id="game-container">
+
+    <div class="h1-high-score">
+        <h1>Welcome to Boggle</h1>
+        <p><small>You've play Boggle <b>{{numplays}}</b> times.</small></p>
+        <p> <b>High Score:{{highscore}}</b> </p>
+    </div>
+    
+    <hr>
+    
+
+    <div class="time-score">
+        <p>Current Score:<b class="curr-score">0</b></p>
+        <p>Timer: <b class="timer"></b></p>
+    </div>
+    
+    <hr>
+
+    <div class="table-div">
+        <table id="game-board">
+            <tbody>
+                {% for row in board %}
+                <tr>
+                    {% for area in row %}
+                    <td>{{area}}</td>
+                    {% endfor %}
+                </tr>
+                {% endfor %}
+            </tbody>
+        </table>
+    </div>
+
+    <div class="form-list">
+        <p class="msg-p">Please guess a word below.</p>
+        <form action="#" method="post" class="word-form">
+            <input type="text" name="user-guess" id="guess-input">
+            <button>Enter Word</button>
+        </form>
+        <ul id="word-list">
+        </ul>
+    </div>
+</section>
+
+{% endblock %}
